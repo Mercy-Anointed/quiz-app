@@ -78,7 +78,7 @@ const QuizContent = () => {
          <h2>TimeLeft:  {timeHandler(time)}</h2> 
         
       </div>
-      <div>
+      <div className='question-box'>
        
         <h2>Questions: {questionNo + 1} / {questions.length}</h2>
         <h3>{questions[questionNo].quest}</h3>
