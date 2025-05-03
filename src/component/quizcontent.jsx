@@ -78,10 +78,10 @@ const QuizContent = () => {
          <h2>TimeLeft:  {timeHandler(time)}</h2> 
         
       </div>
-      <div className='question-box'>
+      <div >
        
-        <h2>Questions: {questionNo + 1} / {questions.length}</h2>
-        <h3>{questions[questionNo].quest}</h3>
+        <h2 >Questions: {questionNo + 1} / {questions.length}</h2>
+        <h3 style={{marginBottom:"30px"}}>{questions[questionNo].quest}</h3>
         {questions[questionNo].options.map((option, index) => 
         <motion.button className={`question-btn ${
           answered  ?  option === questions[questionNo].correct ? 'correct' : option === selected ?  'wrong' : '' : '' 
